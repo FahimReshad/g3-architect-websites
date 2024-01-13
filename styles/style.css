@@ -24,6 +24,11 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    font-size: 2.9rem;
+    font-weight: 700;
 }
 nav >ul{
     display: flex;
@@ -39,11 +44,36 @@ nav li a{
 .banner-content{
    max-width: 800px;
     text-align: center;
-    margin: 0 auto;
-    padding: 50px;
+    margin: 50px auto;
+    /* padding: 50px; */
 }
 .banner-title{
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
+}
+.banner img{
+    width: 100%;
+}
+
+/* media queries*/
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+/* medium devices  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    header{
+        padding: 20px;
+    }
+
 }
